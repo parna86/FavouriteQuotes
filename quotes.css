@@ -1,15 +1,5 @@
 body{
     margin: 0 auto;
-    /* background: url("images/brooklyn-nine-nine.jpg"), 
-                url("images/castle.jpg"),
-                url("images/chuck.jpg"),
-                url("images/community.jpg"),
-                url("images/friends.jpg"),
-                url("images/himym.jpg"),
-                url("images/modern_family.jpg"),
-                url("images/new_girl.jpg"),
-                url("images/office.jpg"),
-                url("images/sherlock.jpg"); */
     background: url("images/collage2.jpg") no-repeat center fixed;
     background-size: cover;
 }
@@ -23,13 +13,14 @@ nav{
 
 nav a{
     font-family: 'Patrick Hand', cursive;
+    font-weight: 900;
     font-size: 1.5em;
     padding: 20px 40px;
-    color: #7e0000;
+    color: #07916e;
 }
 
 a:hover{
-    background-color: #f4d45e2d;
+    background-color: #000;
 }
 
 h2{
@@ -45,6 +36,13 @@ h2{
     color: white;
     font-size: 4em;
     background-color: #04724D;
+    width: 70%;
+    margin: 0 auto;
+    transition: width 0.7s;
+}
+
+.titleArea h2:hover{
+    width: 80%;
 }
 
 .quote{
