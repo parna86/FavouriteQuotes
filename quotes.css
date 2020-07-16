@@ -1,0 +1,83 @@
+body{
+    margin: 0 auto;
+    /* background: url("images/brooklyn-nine-nine.jpg"), 
+                url("images/castle.jpg"),
+                url("images/chuck.jpg"),
+                url("images/community.jpg"),
+                url("images/friends.jpg"),
+                url("images/himym.jpg"),
+                url("images/modern_family.jpg"),
+                url("images/new_girl.jpg"),
+                url("images/office.jpg"),
+                url("images/sherlock.jpg"); */
+    background: url("images/collage2.jpg") no-repeat center fixed;
+    background-size: cover;
+}
+
+nav{
+    display: flex;
+    width: 100%;
+    justify-content: space-evenly;
+    background: rgba(45,6,6,0.4);
+}
+
+nav a{
+    font-family: 'Patrick Hand', cursive;
+    font-size: 1.5em;
+    padding: 20px 40px;
+    color: #7e0000;
+}
+
+a:hover{
+    background-color: #f4d45e2d;
+}
+
+h2{
+    text-align: center;
+}
+
+.titleArea{
+    padding: 30vh 0 50vh;
+}
+
+.titleArea h2{
+    font-family: 'Fondamento', cursive;
+    color: white;
+    font-size: 4em;
+    background-color: #04724D;
+}
+
+.quote{
+    margin: 20px auto;
+    padding: 400px 0;
+    opacity: 0.7;
+    transition: opacity 0.2s;
+    font-family: 'Caveat', cursive;
+}
+
+.quote h2{
+    font-size: 3em;
+}
+.quote:hover{
+    opacity: 0.9;
+}
+
+.quote1{
+    background-color: #BFDBF7;
+}
+
+.quote2{
+    background-color: #C33C54;
+}
+
+.quote3{
+    background-color: #04724D;
+}
+
+.quote4{
+    background-color: #F4D35E;
+}
+
+.quote5{
+    background-color: #FB5012;
+}
