@@ -33,12 +33,14 @@ h2{
 
 .titleArea h2{
     font-family: 'Fondamento', cursive;
-    color: white;
-    font-size: 4em;
-    background-color: #04724D;
+    color: black;
+    -webkit-text-stroke-width: 0.5px; 
+    -webkit-text-stroke-color: #0bb2cf; 
+    font-size: 6em;
     width: 70%;
     margin: 0 auto;
     transition: width 0.7s;
+    transform: rotate(20deg);
 }
 
 .titleArea h2:hover{
