@@ -64,22 +64,26 @@ h2{
     opacity: 0.9;
 }
 
-.quote1{
+.quote:nth-child(n){
     background-color: #BFDBF7;
 }
 
-.quote2{
+.quote:nth-child(2n){
     background-color: #C33C54;
 }
 
-.quote3{
-    background-color: #04724D;
+/* .quote2{
+    
 }
 
-.quote4{
+/* .quote3{
+    background-color: #04724D;
+} */
+
+.quote:nth-child(3n){
     background-color: #F4D35E;
 }
 
-.quote5{
-    background-color: #FB5012;
-}
+.quote:nth-child(4n){
+    background-color: #04724D;
+} */

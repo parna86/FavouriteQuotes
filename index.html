@@ -4,9 +4,8 @@
         
     <meta charset="utf-8"/>
     <meta name = "author" content = "Aparna Rajeev"/>
-    <meta name="description" content="Reading a few quotes 
-    from my favourite TV shows always tends to put a smile on my 
-    face.">
+    <meta name="description" content="Reading a few quotes from my favourite TV shows always tends to put a smile on my face.">
+
     <!-- <meta rel ="icon" type = "image/png" href = "talk-show.png"/> -->
     <title>Favourite Quotes</title>
     <link href="https://fonts.googleapis.com/css2?family=Caveat&family=Fondamento&family=Patrick+Hand&display=swap" rel="stylesheet"> 
@@ -27,83 +26,12 @@
                 Favourite quotes - TV shows.
             </h2>
         </section>
-        <section class = "quote quote1">
-            <h2>
-                “When life gives you lemonade, make lemons. Life will be all, ‘Whaaat?’”
-                <br> -Phil Dunphy
-            </h2>
-        </section>
-        <section class = "quote quote2">
-            <h2>
-                "Sometimes I'll start a sentence and I don't even know where it's going. I just hope I 
-                find it along the way." <br>— Michael Scott
-            </h2>
-        </section>
-        <section class = "quote quote3">
-            <h2>
-                “Anyone over the age of six celebrating a birthday should go to hell.” 
-                <br>– Rosa Diaz
-            </h2>
-        </section>
-        <section class = "quote quote4">
-            <h2>
-                "I'm not superstitious, but I am a little stitious." <br>— Michael Scott
-            </h2>
-        </section>
-        <section class = "quote quote5">
-            <h2>
-                “The only thing I’m not good at is modesty, because I’m great at it.” 
-                <br>— Gina Linetti
-            </h2>
-        </section>
-        <section class = "quote quote1">
-            <h2>
-                “You can’t cling to the past, because no matter how tightly you hold on,
-                it’s already gone.” <br>— Ted Mosby
-            </h2>
-        </section>
-        <section class = "quote quote2">
-            <h2>
-                “I don’t even have a ‘pla.’ ” <br>— Phoebe Buffay
-            </h2>
-        </section>
-        <section class = "quote quote3">
-            <h2>
-                “There’s a lot of beauty in ordinary things. Isn’t that 
-                kind of the point?” <br> – Pam Beesly   
-            </h2>
-        </section>
-        <section class = "quote quote4">
-            <h2>
-                “You keep giving up on people, you’re going to miss out on something great.”
-                <br> — Robin Scherbatsky 
-            </h2>
-        </section>
-        <section class = "quote quote5">
-            <h2>
-                “I always hear 'punch me in the face' when you're speaking,
-                 but it's usually sub-text.” <br>- John Watson
-            </h2>
-        </section>
-        <script>
-            let nav = document.getElementsByTagName('nav')[0];
-            let isScrolling = false;
-            window.onscroll = function(){
-                isScrolling = true;
-            }
-
-            window.setInterval(function(){
-                if(isScrolling){
-                    nav.style.background = 'rgba(29, 17, 40,0)';
-                    nav.style.transitionDelay = '0s';
-                    isScrolling = false;
-                }
-                else{
-                    nav.style.background = 'rgba(29, 17, 40,0.9)';
-                    nav.style.transitionDelay = '0.2s';
-                }
-            }, 100);
-        </script>
+         <!-- Firebase App (the core Firebase SDK) is always required and must be listed first -->
+         <script src="https://www.gstatic.com/firebasejs/7.22.1/firebase-app.js"></script>
+      
+         <!-- Add Firebase products that you want to use -->
+         <script src="https://www.gstatic.com/firebasejs/7.22.1/firebase-database.js"></script>
+        <script src = 'database.js'></script>
         <footer>Icons made by <a href="https://www.flaticon.com/authors/surang" title="surang">surang</a> from <a href="https://www.flaticon.com/" title="Flaticon"> www.flaticon.com</a></footer>
     </body>
 </html>
