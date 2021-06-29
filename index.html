@@ -14,13 +14,13 @@
     </head>
     <body>
         <nav>
-            <a>TV Shows</a>
-            <a>Movies</a>
+            <a onclick="showQuotes('Brooklyn Nine Nine')">Brooklyn Nine Nine</a>
+            <a onclick="showQuotes('The Office')">The Office</a>
+            <a onclick="showQuotes('Modern Family')">Modern Family</a>
         </nav>
         <section class = "titleArea">
-            <h2>
-                Favourite quotes
-            </h2>
+            <h2>Favourite quotes</h2>
+            <h4>Created by <a target="_blank" href="https://github.com/parna86">Aparna</a></h4>
         </section>
          <!-- Firebase App (the core Firebase SDK) is always required and must be listed first -->
          <script src="https://www.gstatic.com/firebasejs/7.22.1/firebase-app.js"></script>
@@ -28,6 +28,7 @@
          <!-- Add Firebase products that you want to use -->
          <script src="https://www.gstatic.com/firebasejs/7.22.1/firebase-database.js"></script>
         <script src = 'database.js'></script>
-        <footer>Icons made by <a href="https://www.flaticon.com/authors/surang" title="surang">surang</a> from <a href="https://www.flaticon.com/" title="Flaticon"> www.flaticon.com</a></footer>
+        <footer style="visibility: hidden;">Icons made by <a href="https://www.flaticon.com/authors/surang" title="surang">surang</a> from <a href="https://www.flaticon.com/" title="Flaticon"> www.flaticon.com</a></footer>
+        <footer class = "footer" style="display: none;">Made by Appa</footer>
     </body>
 </html>

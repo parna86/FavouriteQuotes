@@ -17,24 +17,30 @@ window.setInterval(function(){
 }, 100);
 
 var config = {
-    apiKey: ${{ secrets.API_KEY }},
+    apiKey: "AIzaSyBV80MlBEzSOl8lj0nB24LizH_Kv061oq8",
     authDomain: "favourite-quotes-288820.firebaseapp.com",
     databaseURL: "https://favourite-quotes-288820.firebaseio.com/",
     storageBucket: "favourite-quotes-288820.appspot.com"
 };
 firebase.initializeApp(config);
-
 var database = firebase.database();
-var quotesRef = firebase.database().ref().child('quote');
-quotesRef.on('value', snap => {
-    var data = snap.val();
-    console.log(data);
-    for(key in snap.val()){
-        var sect = document.createElement('section');
-        var h2 = document.createElement('h2');
-        sect.appendChild(h2);
-        sect.className = 'quote';
-        h2.innerHTML = data[key];
-        document.getElementsByTagName('body')[0].appendChild(sect);
-    }
-});
+var sect = document.createElement('section');
+
+function showQuotes(showName){
+    var quotesRef = firebase.database().ref().child(showName);
+    quotesRef.on('value', snap => {
+        var data = snap.val();
+        console.log(data);
+        sect.innerHTML=""; //to have the new set of quotes replace the old ones
+        sect.className = "card-wrapper";
+        for(character in data){
+           for(index in data[character]){
+            var div = document.createElement('div');
+            sect.appendChild(div);
+            div.className = 'card';
+            div.innerHTML = data[character][index] + "<br> -" + character;
+            document.getElementsByTagName('body')[0].appendChild(sect);
+           }  
+        }
+    });
+}

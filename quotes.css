@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Poiret+One&display=swap');
+
 body{
     margin: 0 auto;
     background: url("images/collage2.jpg") no-repeat center fixed;
@@ -22,68 +24,69 @@ nav a{
     color: #FFD23F;
 }
 
-a:hover{
+nav a:hover{
     background-color: rgba(29, 17, 40,1.0);
 }
 
-h2{
-    text-align: center;
-}
 
 .titleArea{
-    padding: 30vh 0 50vh;
+    padding: 30vh 0 30vh;
 }
 
-.titleArea h2{
+.titleArea h2, .titleArea h4{
+    text-align: center;
     font-family: 'Unica One', serif;
     color: #FFD23F;
     background-color: #1D1128;
-    padding: 5vh;
+    padding: 2vh;
     font-size: 4em;
     width: 70%;
     margin: 0 auto;
     transition: width 0.7s;
 }
 
-.titleArea h2:hover{
-    width: 80%;
+.titleArea h4{
+    font-size: 2em;
+    position: relative;
 }
 
-.quote{
-    margin: 20px auto;
-    padding: 400px 0;
-    opacity: 0.7;
-    transition: opacity 0.2s;
-    font-family: 'Caveat', cursive;
+.titleArea a{
+    text-decoration: none;
+    color: #FFD23F;
 }
 
-.quote h2{
-    font-size: 3em;
-}
-.quote:hover{
-    opacity: 0.9;
+.titleArea a:hover{
+    background-color: rgba(150,150,150,0.3);
 }
 
-.quote:nth-child(n){
-    background-color: #BFDBF7;
+.card-wrapper{
+    grid-template-columns: 1fr 1fr 1fr;
+    display: grid;
+    justify-items: center;
+    align-items: start;
+}
+.card{
+    width: 30vw; 
+    height: auto;
+    background-color: rgba(206, 168, 242, 0.7);
+    margin: 40px 0;
+    font-family: 'Poiret One', cursive;
+    color: black;
+    font-size: 20pt;
+    border-radius: 5%/30%;
+    border: 2px solid black;
+    padding: 8px;
 }
 
-.quote:nth-child(2n){
-    background-color: #C33C54;
+.card:hover{
+    background-color: rgba(206, 168, 242, 1);
 }
 
-/* .quote2{
-    
-}
-
-/* .quote3{
-    background-color: #04724D;
-} */
-
-.quote:nth-child(3n){
-    background-color: #F4D35E;
-}
-
-.quote:nth-child(4n){
-    background-color: #04724D;
-} */
+@keyframes elongating{
+    from{
+      height:0;
+    }
+    to{
+      height: 1em;
+    }
+  }
